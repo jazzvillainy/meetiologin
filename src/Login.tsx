@@ -5,9 +5,13 @@ import { FaApple } from "react-icons/fa";
 
 function Login() {
   return (
-    <section className="w-[1280px] h-[1099px]">
-      <div className=" bg-black absolute opacity-35 w-[1280px] h-[1099px]"></div>
-      <img className="object-cover h-full " src={img} alt="" />
+    <section className=" bg-black w-full h-[1099px]">
+      <div className=" bg-black absolute opacity-35 w-[inherit] h-[1099px]"></div>
+      <img
+        className="object-cover  w-[inherit] h-[inherit] "
+        src={img}
+        alt=""
+      />
       <div className="bg-white w-[637px] h-[900px] absolute flex flex-col top-[84px] left-[606px] rounded-[8px]">
         <span className="w-[349px] h-[39px] absolute top-[52px] left-[144px] font-inter font-semibold text-[32px]  tracking-[0%]">
           Log in to your Account
