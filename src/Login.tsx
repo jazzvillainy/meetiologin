@@ -5,16 +5,16 @@ import { FaApple } from "react-icons/fa";
 
 function Login() {
   return (
-    <section className="flex justify-center">
-      <div className=" bg-black w-[1280px] relative h-[1099px]">
-        <div className=" bg-black absolute opacity-35 w-[inherit] h-[1099px]"></div>
+    <section className="flex  justify-center">
+      <div className=" bg-green-500 lg:w-[1280px] xl:w-full xl:h-full relative h-[1099px]">
+        <div className=" bg-black absolute flex xl:h-full  opacity-35 w-[inherit] h-[1099px]"></div>
         <img
           className="object-cover w-[inherit] h-[inherit] "
           src={img}
           alt=""
         />
-        <div className="bg-white w-[637px] h-[81%] absolute flex flex-col top-[84px] left-[606px] rounded-[8px]">
-          <span className="w-[349px] h-[39px] absolute top-[52px] left-[144px] font-inter font-semibold text-[32px]  tracking-[0%]">
+        <form className="bg-white md:left-[11%] xl:h-full xl:py-5 xl:top-0 xl:rounded-none xl:space-y-[-20px] xl:left-[650px] w-[637px] h-[81%] absolute flex flex-col top-[84px] left-[606px] rounded-[8px]">
+          <span className="w-[349px] h-[39px] absolute top-[52px] xl:top-[12px] left-[144px] font-inter font-semibold text-[32px]  tracking-[0%]">
             Log in to your Account
           </span>
           <span className="w-[265px] h-[19px] absolute top-[103px] left-[187px] font-inter font-medium text-[16px]">
@@ -59,7 +59,7 @@ function Login() {
               Privacy Statement
             </a>
           </span>
-          <span className="w-[364px] text-gray-500 h-[19px] items-center flex gap-2 absolute top-[550px] left-[129px] font-inter font-medium text-[16px] leading-[19.36px]">
+          <span className=" text-gray-500 h-[19px] items-center flex gap-2 absolute top-[550px] left-[129px] font-inter font-medium text-[16px] leading-[19.36px]">
             <hr className="w-[176px] border-[1px]" />
             <p>or</p>
             <hr className="w-[172px] border-[1px]" />
@@ -90,8 +90,8 @@ function Login() {
             />
             <label htmlFor="check">Stay signed in</label>
           </span>
-        </div>
-        <span className="text-white w-[231px] h-[78px] absolute top-[516px] left-[189px] font-montserrat font-bold text-[64px] leading-[78.02px] tracking-[0%]">
+        </form>
+        <span className=" md:hidden text-white w-[231px] h-[78px] absolute top-[46%] left-[189px] font-montserrat font-bold text-[64px] leading-[78.02px] tracking-[0%]">
           Meetio
         </span>
       </div>
