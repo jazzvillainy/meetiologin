@@ -2,8 +2,16 @@ import img from "./assets/f072fb2d51d4c603b7e9808ddab8ccc8.jpeg";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
+import { useState } from "react";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({
+    email: "",
+    password: "",
+  });
+
   return (
     <section className="flex  justify-center">
       <div className=" bg-green-500 lg:w-[1280px] xl:w-full xl:h-full relative h-[1099px]">
@@ -27,6 +35,7 @@ function Login() {
             Email
           </span>
           <input
+            name="email"
             placeholder="Enter email"
             type="Email"
             className="border-[1.2px] pl-2 placeholder-inter placeholder-font-medium placeholder-text-[14px] placeholder-gray-500 text-[gray-400] border-gray-400 outline-none focus:border-blue-500 focus:border-[2px] hover:border-blue-500 hover:border-[2px] w-[380px] h-[54px] absolute top-[189px] left-[130px] rounded-[8px]  border-solid border-[#0000004D]"
@@ -35,6 +44,7 @@ function Login() {
             Password
           </span>
           <input
+            name="password"
             placeholder="Enter password"
             type="Password"
             className="border-[1.2px] pl-2 placeholder-inter placeholder-font-medium placeholder-text-[14px] placeholder-gray-500 text-[gray-400] border-gray-400 outline-none focus:border-blue-500 focus:border-[2px] hover:border-blue-500 hover:border-[2px] w-[380px] h-[54px] absolute top-[284px] left-[130px] rounded-[8px]  border-solid border-[#0000004D]"
@@ -84,6 +94,7 @@ function Login() {
           </button>
           <span className="absolute flex items-center text-gray-500 gap-2 top-[832px] font-inter font-medium text-[12px] leading-[14.52px] tracking-[0%] left-[272px]">
             <input
+              name="checkbox"
               id="check"
               className="w-[15px] h-[14px] accent-black  rounded-[4px] "
               type="checkbox"
