@@ -7,7 +7,7 @@ function Footer() {
           <span>Keep in touchnit with Meetio News and updates</span>
           <form className="flex">
             <input placeholder="Email..." type="text" />
-            <button>Sub</button>
+            <button>Submit</button>
           </form>
         </div>
         <div className="flex flex-col w-1/2 max-lg:w-full">
