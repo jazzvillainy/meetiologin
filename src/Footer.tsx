@@ -3,9 +3,9 @@ import x from "./assets/Group.png"
 import linkedIn from "./assets/skill-icons_linkedin.png"
 function Footer() {
   return (
-    <section className="pl-[63px] pr-[159px] pt-[46px] h-[399px] flex flex-col justify-between">
-      <div className="flex w-full max-lg:flex-col max-lg:w-full">
-        <div className="flex flex-col w-1/2 max-lg:w-full">
+    <section className=" max-sm:hidden max-lg:pr-[12px] max-lg:px-4 lg:pl-[63px] max-lg:gap-[40px] lg:pr-[159px] pt-[46px] h-[399px] flex flex-col justify-between">
+      <div className="flex w-full max-lg:flex-col max-lg:gap-10 max-lg:w-full">
+        <div className="flex flex-col w-1/2 max-lg:w-full  max-lg:items-center">
           <span className="font-montserrat font-semibold text-3xl leading-[42.67px] text-teal-500">
             Meetio
           </span>
@@ -14,19 +14,17 @@ function Footer() {
           </span>
           <form className="mt-[16px] flex justify-between items-center pr-[4px] pl-[16px] w-[372px] h-[52px]  rounded-[46px] border-[1px] border-[#00000033] bg-white">
             <input className="" placeholder="Email..." type="text" />
-            <button className="font-montserrat font-medium text-[16px] text-[rgba(255,255,255,1)] w-[126px] h-[44px] top-[4px] left-[242px] rounded-[46px] pt-[8px] pr-[33px] pb-[8px] pl-[33px] gap-[10px] bg-teal-500">
+            <button className="font-montserrat font-medium text-[16px] text-[rgba(255,255,255,1)] w-[126px]  h-[44px] top-[4px] left-[242px] rounded-[46px] pt-[8px] pr-[33px] pb-[8px] pl-[33px] gap-[10px] bg-teal-500">
               Submit
             </button>
           </form>
         </div>
-        <div className="flex flex-col w-1/2 max-lg:w-full">
-          <span className="flex mb-[12px] font-montserrat font-semibold text-[22px] text-[rgba(0,0,0,1)]">
-            <span className="w-[120px]">About</span>
-            <span className="w-[181px] ml-[51px] mr-[38px]">Resources</span>
-            <span className="w-[89px]">Support</span>
-          </span>
-          <span className="flex ">
+        <div className="flex flex-col w-1/2 max-lg:items-center max-lg:w-full">
+          <span className="flex max-lg:gap-10 max-lg:flex-col">
             <span className="w-[120px] flex flex-col font-inter font-medium text-[12px]  text-[rgba(0,0,0,0.5)]">
+              <span className="flex mb-[12px] font-montserrat font-semibold text-[22px] text-[rgba(0,0,0,1)]">
+                <span className="w-[120px]">About</span>
+              </span>
               <span>Our Team</span>
               <span>About Meetio</span>
               <span>Company News</span>
@@ -35,13 +33,19 @@ function Footer() {
               <span>Diversity & Inclusion</span>
               <span>Careers at Meetio</span>
             </span>
-            <span className="ml-[51px] mr-[38px] w-[181px] flex flex-col font-inter font-medium text-[12px]  text-[rgba(0,0,0,0.5)]">
+            <span className="lg:ml-[51px] mr-[38px] w-[181px] flex flex-col font-inter font-medium text-[12px]  text-[rgba(0,0,0,0.5)]">
+              <span className="flex mb-[12px] font-montserrat font-semibold text-[22px] text-[rgba(0,0,0,1)]">
+                <span className="w-[181px]  mr-[38px]">Resources</span>
+              </span>
               <span>Meeting Features</span>
               <span>Collaboration Tools</span>
               <span>User Experience & Interaction</span>
               <span>Security & Privacy</span>
             </span>
             <span className="w-[89px] flex flex-col font-inter font-medium text-[12px] text-[rgba(0,0,0,0.5)]">
+              <span className="flex mb-[12px] font-montserrat font-semibold text-[22px] text-[rgba(0,0,0,1)]">
+                <span className="w-[89px]">Support</span>
+              </span>
               <span>Account</span>
               <span>Support Center</span>
               <span>Contact Us</span>
