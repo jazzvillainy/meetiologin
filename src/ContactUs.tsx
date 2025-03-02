@@ -7,7 +7,7 @@ import Faq from "./Faq";
 import Footer from "./Footer";
 // import { NavLink } from "react-router-dom";
 
-function ContactUs() {
+function ContactUs() {  
   //   const FaqList: React.FC = () => {
   //     faqs.map((question) => {
   //       <Faq question={question} />;
@@ -66,10 +66,10 @@ function ContactUs() {
           type="text"
         />
       </div>
-      <div className="w-full h-[44px] text-center mt-[320px]">
+      <div className="w-full h-[44px] text-center mt-[320px] font-[Montserrat] font-bold text-[36px] leading-[43.88px]">
         Frequently Asked Questions
       </div>
-      <div className="mt-[63px] ml-[11%] flex gap-[16px] h-[30px] ">
+      <div className="mt-[63px]  ml-[11%] max-md:justify-center flex gap-[16px] h-[30px] ">
         {/* <NavLink
           className={({ isActive }) =>
             isActive
@@ -78,7 +78,9 @@ function ContactUs() {
           }
           to={""}
         > */}
-        <button>Expand all</button>
+        <button className="text-[rgba(0,128,128,1)] font-montserrat font-semibold text-[24px] leading-[29.26px] max-sm:text-xl">
+          Expand all
+        </button>
         {/* </NavLink> */}
         <span>|</span>
         {/* <NavLink
@@ -89,7 +91,9 @@ function ContactUs() {
           }
           to={""}
         > */}
-        <button>Collapse all</button>
+        <button className="font-montserrat font-semibold text-[24px] leading-[29.26px] max-sm:text-xl">
+          Collapse all
+        </button>
         {/* </NavLink> */}
       </div>
       <li className="mt-[35px] w-full h-fit gap-[32px] flex flex-col items-center">
@@ -106,18 +110,18 @@ function ContactUs() {
           Load more
         </button>
       </div>
-      <div className="mt-[80px] w-full h-[344px]  text-white bg-[#FFB901] flex flex-col items-center">
-        <span className="font-montserrat font-bold text-[32px] mt-[55px]">
+      <div className="mt-[80px] w-full h-[344px] max-sm:justify-center      text-white  max-sm:text-2xl bg-[#FFB901] flex flex-col items-center">
+        <span className="font-montserrat text-center font-bold text-[32px] mt-[55px]">
           Ready to level up your online meetings?
         </span>
-        <p className="mt-[22px] font-montserrat font-semibold text-[24px]">
+        <p className="mt-[22px] font-montserrat font-semibold  max-sm:text-lg text-[24px]">
           Get started with Meetio today
         </p>
         <button className="mt-[48px] w-[263px] h-[75px] font-montserrat font-medium text-[18px] rounded-[138px] pt-[19px] pr-[25px] pb-[19px] pl-[25px] bg-[#008080]">
           See Our Pricing Plans
         </button>
       </div>
-      <Footer/>
+      <Footer />
     </section>
   );
 }
