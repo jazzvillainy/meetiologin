@@ -1,13 +1,14 @@
 import img from "./assets/f072fb2d51d4c603b7e9808ddab8ccc8.jpeg";
-import ChatWithCs from "./chatWithCs";
+import ChatWithCs from "./ChatWithCs";
 import img1 from "./assets/Frame 217.png";
 import img2 from "./assets/Frame 218.png";
 import img3 from "./assets/Frame 219.png";
 import Faq from "./Faq";
 import Footer from "./Footer";
+import faq from "./FaqData";
 // import { NavLink } from "react-router-dom";
 
-function ContactUs() {  
+function ContactUs() {
   //   const FaqList: React.FC = () => {
   //     faqs.map((question) => {
   //       <Faq question={question} />;
@@ -96,14 +97,13 @@ function ContactUs() {
         </button>
         {/* </NavLink> */}
       </div>
-      <li className="mt-[35px] w-full h-fit gap-[32px] flex flex-col items-center">
-        <Faq />
-        <Faq />
-        <Faq />
-        <Faq />
-        <Faq />
-        <Faq />
-      </li>
+      <ul>
+        {faq.map((item) => (
+          <li className="mt-[35px] w-full h-fit gap-[32px] flex flex-col items-center">
+            <Faq item={item} />
+          </li>
+        ))}
+      </ul>
       ;
       <div className="flex font-montserrat font-semibold text-[20px] text-white">
         <button className="mt-[32px] w-[235px] h-[75px] bg-[#008080] mx-auto rounded-[44px] pt-[18px] pr-[47px] pb-[18px] pl-[47px] gap-[10px]">

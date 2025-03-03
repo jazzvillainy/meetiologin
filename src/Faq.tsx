@@ -1,7 +1,12 @@
 import { useState } from "react";
 import Accordion from "./Accordion";
 
-function Faq({  }) {
+type FAQ = {
+  item: {question: string;
+  answer: string;}
+}
+
+function Faq({item}:FAQ) {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
     <div
@@ -13,7 +18,7 @@ function Faq({  }) {
     >
       <Accordion
         // allCollapse={allCollapsed}
-        //   question={question}
+          item={item}
         accordionOpen={accordionOpen}
         setAccordionOpen={setAccordionOpen}
       />

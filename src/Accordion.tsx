@@ -1,6 +1,8 @@
+type FAQ = {
+  item: { question: string; answer: string };
+};
 
-
-function Accordion({ accordionOpen, setAccordionOpen }) {
+function Accordion({ accordionOpen, setAccordionOpen, item }:FAQ) {
   return (
     <div className="flex justify-between flex-col ">
       <button
@@ -8,11 +10,11 @@ function Accordion({ accordionOpen, setAccordionOpen }) {
         onClick={() => setAccordionOpen(!accordionOpen)}
       >
         <span className="font-montserrat max-md:text-[12px] text-start max-sm:text-[12px] font-semibold text-[24px] ">
-            {/* question title */}
-          1. How many participants can join a meeting?
+          {/* question title */}
+          {item.question}
         </span>
 
-        {accordionOpen  ? (
+        {accordionOpen ? (
           <span className="text-[24px] pr-[28px]">-</span>
         ) : (
           <span className="text-[24px] pr-[28px]">+</span>
@@ -26,12 +28,7 @@ function Accordion({ accordionOpen, setAccordionOpen }) {
         }`}
       >
         <div className="overflow-hidden pl-[17px] pr-[166px]">
-          orem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.orem Ipsum is simply dummy
-          text of the printing and typesetting industry. Lorem Ipsum has been
-          the industry's standard dummy text ever since the 1500s.....
+        {item.answer}
         </div>
       </div>
     </div>

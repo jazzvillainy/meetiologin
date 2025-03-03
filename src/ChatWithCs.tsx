@@ -1,5 +1,14 @@
- 
-function ChatWithCs({ icon, lineOne, lineTwo, lineThree }) {
+function ChatWithCs({
+  icon,
+  lineOne,
+  lineTwo,
+  lineThree,
+}: {
+  icon: React.ReactNode;
+  lineOne: string;
+  lineTwo: string;
+  lineThree: string;
+}) {
   return (
     <div className=" border-[rgba(0,0,0,0.11)] flex flex-col justify-between w-[310px] h-[236px] border-[1px] rounded-[8px] p-[16px]">
       <span className=" rounded-[8px]  border-rgba(0, 0, 0, 0.2)  w-[59px] h-[51px]">
@@ -20,4 +29,4 @@ function ChatWithCs({ icon, lineOne, lineTwo, lineThree }) {
   );
 }
 
-export default ChatWithCs
+export default ChatWithCs;
