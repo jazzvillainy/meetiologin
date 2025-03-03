@@ -7,7 +7,7 @@ type FAQ = {
 }
 
 function Faq({item}:FAQ) {
-  const [accordionOpen, setAccordionOpen] = useState(false);
+  const [accordionOpen, setAccordionOpen] = useState<boolean>(false);
   return (
     <div
       className={

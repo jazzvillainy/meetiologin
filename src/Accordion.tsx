@@ -1,8 +1,10 @@
-type FAQ = {
+type PROPS = {
   item: { question: string; answer: string };
+  accordionOpen: boolean;
+  setAccordionOpen: (value: boolean) => void;
 };
 
-function Accordion({ accordionOpen, setAccordionOpen, item }:FAQ) {
+function Accordion({ accordionOpen, setAccordionOpen, item }: PROPS) {
   return (
     <div className="flex justify-between flex-col ">
       <button
@@ -28,7 +30,7 @@ function Accordion({ accordionOpen, setAccordionOpen, item }:FAQ) {
         }`}
       >
         <div className="overflow-hidden pl-[17px] pr-[166px]">
-        {item.answer}
+          {item.answer}
         </div>
       </div>
     </div>
